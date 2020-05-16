@@ -30,11 +30,12 @@ It would probably be good to first get your basic project setup and functioning.
 - `npm install webpack webpack-cli`
 
 ### Step 3: 
-run in development mode
+#### run in development mode
 To start the webpack dev server at port 8080
 -`npm run build-dev`
-run in production mode
-•	Generate the dist files and then start server at port 3000
+
+#### run in production mode
+Generate the dist files and then start server at port 3000
 -	`npm run build-prod`
 -	`npm run start`
 
