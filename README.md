@@ -23,9 +23,57 @@ You could spend years and get a masters degree focusing on the details of creati
 It would probably be good to first get your basic project setup and functioning. Follow the steps from the course up to Lesson 4 but don't add Service Workers just yet. We won't need the service workers during development and having extra caches floating around just means there's more potential for confusion. So, fork this repo and begin your project setup.
 
 Remember that once you clone, you will still need to install everything:
+### Setting up webpack
 
+#### Step1: Install npm
 `cd` into your new folder and run:
 - `npm install`
+
+#### Step 2: install webpack
+- `npm install webpack webpack-cli`
+
+#### Step 3: 
+run in development mode
+To start the webpack dev server at port 8080
+-`npm run build-dev`
+run in production mode
+•	Generate the dist files and then start server at port 3000
+-	`npm run build-prod`
+-	`npm run start`
+
+#### Step 4: 
+Add entry point in the .config.js files, which the starter code has included this part
+’./src/client/index.js
+
+To Keep in mind, if we want to edit the style, we need to go to src files (not the dis files) and rebuild in order to get those files or get those styles into the built folder
+
+#### Step 5:
+Replace the reference link in the index.html to main.js in the distribution folder
+
+#### Step 6: 
+Install babel: 
+npm i -D @babel/core @babel/preset-env babel-loader
+
+Create a .babelrc file and fill it with these setting
+{ ‘presets’: ['@babel/preset-env'] }
+
+#### Step 7:
+Check export function in formHander.js & nameChecker.js
+Check import function in index.js 
+
+#### Step 8:
+Install html-webpack-plugin
+Check config.js for plugin in setting.
+Once index.html appear in dist folder. The link of JS in html can be removed
+
+#### Step 9:
+Update server: 
+res.sendFile('dist/index.html')
+
+#### Step10:
+-	In confg.js file set the mode:’production’, or mode: ‘development’ (the starter code has include this)
+-	Update the build script in the package.json
+
 
 ## Setting up the API
 
