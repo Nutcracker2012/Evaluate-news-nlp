@@ -23,7 +23,7 @@ You could spend years and get a masters degree focusing on the details of creati
 It would probably be good to first get your basic project setup and functioning. Follow the steps from the course up to Lesson 4 but don't add Service Workers just yet. We won't need the service workers during development and having extra caches floating around just means there's more potential for confusion. So, fork this repo and begin your project setup.
 
 ### Step1: Install npm
-`cd` into your new folder and run:
+`cd` into the project folder and run:
 - `npm install`
 
 ### Step 2: install webpack
@@ -71,6 +71,15 @@ Update server:
 ### Step10:
 -	In confg.js file set the mode:’production’, or mode: ‘development’ (the starter code has include this)
 -	Update the build script in the package.json
+
+### Step 11:
+Install webpack-dev-server and rebuild
+-	` npm i -D webpack-dev-server`
+-	Edit the build script: `rm -rf dist && webpack-dev-server  --config webpack.dev.js –open`
+-	` npm run build-dev`
+
+### Step 12: 
+Install new CleanWebpackPlugin
 
 
 ## Setting up the API
