@@ -48,6 +48,7 @@ Replace the reference link in the index.html to main.js in the distribution fold
 
 ### Step 6: 
 Install babel: 
+the -D will install these as development dependencies
 - `npm i -D @babel/core @babel/preset-env babel-loader`
 
 Create a .babelrc file and fill it with these setting

@@ -1,12 +1,36 @@
-form {
-    border: 1px solid #545454;
-    border-radius: 3px;
-    padding: 40px;
-}
-
-input {
-    padding: 5px 20px;
-    width: 100%;
-    line-height: 16px;
-    margin: 10px 0;
-}
+    $background-color-form: #e3f6f5;
+    $button-hover-color:#bae8e8;
+    form {
+        border: 1px solid #545454;
+        border-radius: 3px;
+        padding: 40px;
+        background-color: $background-color-form;
+    }
+    
+    input {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "type""btn";
+        grid-gap: 1.5rem;
+        // padding: 5px 20px;
+        margin: 10px 0;
+        justify-content: center;
+        line-height: 1.25rem;
+    }
+    
+    input[type=text] {
+        display: grid;
+        grid-area: type;
+    }
+    
+    input[type=submit] {
+        display: grid;
+        grid-area: btn;
+    }
+    
+    input[type=submit]:hover {
+        background-color: $button-hover-color;
+        border-radius: 3px;
+        line-height: 1.25rem;
+    }

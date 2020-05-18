@@ -1,7 +1,12 @@
+$color-result:#272643;
+$color-result-text: #2c698d;
+$color-body:#EBF1F4;
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 16px;
+    background-color: $color-body;
 }
 
 main {
@@ -11,4 +16,14 @@ main {
 section {
     max-width: 800px;
     margin: 50px auto;
+}
+
+h3 {
+    font-size: 20px;
+    color: $color-result;
+}
+
+.result {
+    font-size: 16px;
+    color: $color-result-text;
 }

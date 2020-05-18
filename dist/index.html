@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Test</title>
+    <title>Evaluate a News Article with Natural Language Processing</title>
     <!-- <script type="text/javascript" src="./../../dist/main.js"></script> -->
     <!-- <script type="text/javascript" src='/js/namechecker.js'></script>
     <script type="text/javascript" src='/formHandler.js'></script>
@@ -12,36 +12,46 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/form.css">
     <link rel="stylesheet" href="/styles/footer.css"> -->
-</head>
+<link href="main.css" rel="stylesheet"></head>
 
 <body>
 
     <header>
-        <div class="">
-            Logo
-        </div>
-        <div class="">
-            navigation
-        </div>
+        Evaluate a News Article with Natural Language Processing
     </header>
 
     <main>
         <section>
             <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter a valid URL for sentiment analysis">
+                <input id="btn" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
             </form>
             <section>
 
                 <section>
-                    <strong>Form Results:</strong>
-                    <div id="results"></div>
+                    <h3>Analysis Results:</h3>
+                    <div class="result">
+                        <div id="Polarity"></div>
+                        <div id="Subjectivity"></div>
+                        <div id="PolarityConfidence"></div>
+                        <div id="SubjectivityConfidence"></div>
+                    </div>
+
                 </section>
     </main>
 
     <footer>
         <p>This is a footer</p>
     </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
 
 <script type="text/javascript" src="main.js"></script></body>
 

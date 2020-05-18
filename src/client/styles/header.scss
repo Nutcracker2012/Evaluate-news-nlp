@@ -1,5 +1,12 @@
+$color-header: #272643;
+$font-size-header: 2rem;
+$margin-top-header: 1rem;
 header {
+    margin-top: $margin-top-header;
     display: flex;
-    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
     padding: 10px 40px;
+    font-size: $font-size-header;
+    color: $color-header;
 }
