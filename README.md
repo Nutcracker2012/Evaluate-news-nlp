@@ -176,5 +176,6 @@ You need to have 'node.js' and 'npm' installed in order to run the project. To b
 
 ## Project Screenshots
 ### App Home page
-![App screenshot](src/client/img/Sceen_1.png)
-![App screenshot](src/client/img/Sceen_2.png)
+![App_screenshot1](src/client/img/Screen_1.png)
+### App Return page
+![App_screenshot2](src/client/img/Screen_2.png)
