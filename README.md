@@ -167,11 +167,12 @@ You need to have 'node.js' and 'npm' installed in order to run the project. To b
 
 - Run 'npm install' to install all dependencies
 - Run 'npm run build-dev' to start webpack dev server
-- Dev: localhost:8080
+- View the URL http://localhost:8080/ in browser.
 
 - Run 'npm run build-prod' to build production version
 - Split the terminal and run 'npm start' to start express server
-- Prod: localhost:8082
+- View the URL http://localhost:8082/ in browser.
+
 
 
 ## Project Screenshots
